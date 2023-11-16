@@ -25,6 +25,8 @@ for(let i= 0; i < emojis.length; i++){
     let caixa = document.createElement("div");
     caixa.className = "item";
     caixa.innerHTML = embaralharEmojis[i];
+    caixa.onclick = click;
+    document.querySelector(".jogo").appendChild(caixa);
 };
 
 function click(){
